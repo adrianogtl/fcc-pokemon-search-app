@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pokémon Search</h1>
+      <div class="input-box">
+        <input id="search-input" class="input" type="text" required autofocus />
+        <button id="search-button" class="btn" type="button">Search</button>
+      </div>
+    </header>
+    <main class="container">
+      <section class="top">
+        <div class="name-id">
+          <span id="pokemon-name"></span>
+          <span id="pokemon-id"></span>
+        </div>
+        <div class="size">
+          <span id="weight"></span>
+          <span id="height"></span>
+        </div>
+        <div class="photo">
+          <img
+            id="sprite"
+            src="https://www.pngall.com/wp-content/uploads/4/Pokeball-PNG-HD-Image.png"
+            alt="pokeball"
+          />
+        </div>
+        <div id="types"></div>
+      </section>
+      <section class="bottom">
+        <table>
+          <thead>
+            <tr>
+              <th>Base</th>
+              <th>Stats</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HP</th>
+              <td id="hp">?</td>
+            </tr>
+            <tr>
+              <th>Attack</th>
+              <td id="attack">?</td>
+            </tr>
+            <tr>
+              <th>Defense</th>
+              <td id="defense">?</td>
+            </tr>
+            <tr>
+              <th>Special Attack</th>
+              <td id="special-attack">?</td>
+            </tr>
+            <tr>
+              <th>Special Defense</th>
+              <td id="special-defense">?</td>
+            </tr>
+            <tr>
+              <th>Speed</th>
+              <td id="speed">?</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
